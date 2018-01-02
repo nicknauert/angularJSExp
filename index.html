@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app="core">
+  <head>
+    <!--     LINKIN     -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow:600|Dosis:300,600" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body ng-controller="mainCtrl as vm">
+    <navbar></navbar>
+    <div ng-view class="slide"></div>
+
+
+
+  <!--     SCRIPPIN     -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js" charset="utf-8"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-animate.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js" charset="utf-8"></script>
+  <script src="js/services/router.js"></script>
+  <script src="js/services/mainService.js"></script>
+  <script src="js/services/workService.js"></script>
+  <script src="js/services/aboutService.js"></script>
+  <script src="js/services/dataStoreService.js"></script>
+  <script src="js/controllers/mainController.js"></script>
+  <script src="js/controllers/workController.js"></script>
+  <script src="js/controllers/aboutController.js"></script>
+  <script src="js/core.js"></script>
+  <script src="components/user-list/user-list.js"></script>
+  <script src="components/navbar/navbar.js"></script>
+  <script src="components/about-page/about-us.js"></script>
+  <script src="components/about-page/what-we-do.js"></script>
+  <script src="components/about-page/team-section.js"></script>
+  <script src="components/work-page/card-container.js"></script>
+  <script src="components/work-page/filters-container.js"></script>
+  <script src="components/work-page/switch-container.js"></script>
+  </body>
+</html>

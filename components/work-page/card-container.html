@@ -1,0 +1,20 @@
+<section class="card-cont" >
+  <div class="card-form-cont" ng-hide="work.cardCreated">
+    <p class="form-label">Create an ID Badge</p>
+    <input type="text" placeholder="Full Name" class="form-text-input" ng-model="work.form.name">
+    <input type="text" placeholder="Alias" class="form-text-input" ng-model="work.form.nickName">
+    <input type="text" placeholder="Email" class="form-text-input" ng-model="work.form.email">
+    <input type="text" class="form-text-input" placeholder="Telephone" ng-model="work.form.telephone">
+    <p class="error-message" ng-if="work.error">{{work.error}}</p>
+    <button class="submit-btn" ng-click="work.createBadge()" >Submit For Approval</button>
+  </div>
+  <div class="card" ng-show="work.cardCreated">
+    <img class="card-avatar" src='http://fillmurray.com/200/200'>
+    <div class="card-text-info">
+      <p class="card-name">{{work.form.name}}</p>
+      <p class="card-nickName">{{work.form.nickName}}</p>
+      <p class="card-email">{{work.form.email}}</p>
+      <p class="card-telephone">{{work.form.telephone}}</p>
+    </div>
+  </div>
+</section>

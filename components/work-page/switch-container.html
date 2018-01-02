@@ -1,0 +1,15 @@
+
+<section class="switch-cont pad-9w">
+  <div class="square-cont">
+    <button class="switch-btn" ng-click="vm.toggleBool('one')" >One</button>
+    <div class="square square-1 square-slide" ng-if="vm.getBoolObj.one">ng-animate</div>
+  </div>
+  <div class="square-cont">
+    <button class="switch-btn" ng-click="vm.toggleBool('two')" >Two</button>
+    <div class="square square-2 grow" ng-if="vm.getBoolObj.two">ng-animate</div>
+  </div>
+  <div class="square-cont">
+    <button class="switch-btn" ng-click="vm.toggleBool('three')" >Three</button>
+    <div class="square square-3" ng-if="vm.getBoolObj.three">no animation</div>
+  </div>
+</section>
