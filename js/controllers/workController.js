@@ -32,4 +32,12 @@ angular.module('workController', ['workService', 'dataStoreService'])
         work.error = validated;
       }
     }
-})
+
+    work.paragraph = "Truncating a long paragraph because sometimes you just Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, illo? Dolor eligendi provident accusantium consectetur nihil pariatur veritatis, deleniti est sunt assumenda officiis quod. Obcaecati omnis repellendus magnam ullam adipisci"
+
+  })
+  .filter('truncate', function(){
+    return function(post){
+      return post.substring(0, 49) + "..."
+    }
+  })

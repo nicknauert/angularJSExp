@@ -1,4 +1,5 @@
 <section class="filters-cont pad-9w">
+  <h2>FILTERS:</h2>
   <div class="time-cont">
     <p class="time-copy">The current date and time is:</p>
     <p class="time-display">{{work.displayDate}}</p>
@@ -6,5 +7,9 @@
   <div class="json-cont">
       <p class="json-copy">The controller for this view:</p>
       <p class="json-display" ng-bind="work.controllerObject"></p>
+  </div>
+  <div class="trunc-cont">
+      <p class="trunc-copy" ng-bind="work.paragraph">Truncating a long paragraph because sometimes you just Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, illo? Dolor eligendi provident accusantium consectetur nihil pariatur veritatis, deleniti est sunt assumenda officiis quod. Obcaecati omnis repellendus magnam ullam adipisci.</p>
+      <p class="trunc-display" ng-bind="work.paragraph | truncate"></p>
   </div>
 </section>

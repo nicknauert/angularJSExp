@@ -5,9 +5,5 @@ angular.module('mainController', ['mainService'])
       console.log($scope);
       this.toggledThing = !this.toggledThing
     }
-})
-  .filter('truncate', function(){
-    return function(post){
-      return post.substring(0, 49) + "..."
-    }
   })
+  

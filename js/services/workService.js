@@ -13,12 +13,6 @@ angular.module('workService', ['dataStoreService'])
       console.log("SVC", bools);
     }
 
-    this.getBoolService = () => {
-      return bools
-    }
-    
-    
-
     // Filter functions //////////////
     this.getDate = function(){
       let currentDate = new Date();
