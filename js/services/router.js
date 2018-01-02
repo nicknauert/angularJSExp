@@ -12,5 +12,4 @@ angular.module('router', ['ngRoute'])
         controller: 'workCtrl',
         controllerAs: 'work'
       })
-      $locationProvider.html5Mode(true)
   })
